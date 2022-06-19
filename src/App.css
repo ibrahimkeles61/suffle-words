@@ -1,39 +1,47 @@
-.App {
-  text-align: center;
+:root{
+    --color1:#8ECAE6;
+    --color2:#219EBC;
+    --color3:#126782;
+    --color4:#023047;
+    --color5:#FFB703;
+    --color6:#FD9E02;
+    --color7:#FB8500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.panel{
+    width:1400px;
+    height:650px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(to bottom right,var(--color4) ,var(--color3));
+    border-radius:20px;
+    box-shadow: 0 0 30px #000000aa;
+    position:relative;
+    font-size: 10rem;
+    color:#e4d8d8;
+    color:#000000;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 5px #e4d8d8;
+    overflow:hidden;
+    -webkit-user-select: none;
+    /* user-select: none; */
+    /* ilk ikiside kendi başına işe yaradı ama
+    aşağıdakilerde başka yerde gerekebilir */
+    /* -webkit-user-drag: none; */
+    /* -moz-user-select: none; */
+    /* -ms-user-select: none; */
+    /* user-drag: none; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.panel:hover{
+    cursor:pointer;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
+.dashBoard{
+    width:100%;
+    height:90vh;
+    background-image: linear-gradient(to top right,var(--color3),var(--color4));
+    display:flex;
+    justify-content:center;
+    }
